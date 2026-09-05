@@ -103,8 +103,8 @@ def main():
     for idx, url in enumerate(lines, 1):
         print(f"\n({idx}/{total_sources}) 正在处理源: {url}", flush=True)
         
-        # 调用递归抓取（限制最大深度为 2 层，可按需调大）
-        items = parse_directory_recursive(url, current_depth=1, max_depth=2)
+        # 调用递归抓取（限制最大深度为 20 层，可按需调大）
+        items = parse_directory_recursive(url, current_depth=1, max_depth=20)
         
         added_count = 0
         for item in items:
