@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
@@ -14,8 +15,9 @@ def parse_directory_listing(base_url):
     media_items = []
     try:
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        # 忽略 SSL 证书报错（针对部分自签名的测试/IP服务器）
+        # 忽略 SSL 证书报错
         response = requests.get(base_url, headers=headers, timeout=6, verify=False)
+        print(f"  -> 状态码: {response.status_code}", flush=True)
         if response.status_code != 200:
             return media_items
         
@@ -35,9 +37,7 @@ def parse_directory_listing(base_url):
             # 检查链接是否以常见视频格式结尾（忽略大小写）
             parsed_path = urlparse(absolute_url).path.lower()
             if parsed_path.endswith(VIDEO_EXTENSIONS):
-                # 提取纯文件名作为显示名称
                 file_name = os.path.basename(parsed_path)
-                # 顺便把上级目录或服务器简写带上，方便在手机里区分来源
                 domain_prefix = urlparse(base_url).netloc
                 
                 media_items.append({
@@ -46,13 +46,13 @@ def parse_directory_listing(base_url):
                 })
                 
     except Exception as e:
-        print(f"解析出错 {base_url}: {e}")
+        print(f"  -> 解析出错 {base_url}: {e}", flush=True)
         
     return media_items
 
 def main():
     if not os.path.exists(SOURCES_FILE):
-        print(f"未找到源文件: {SOURCES_FILE}")
+        print(f"未找到源文件: {SOURCES_FILE}", flush=True)
         return
         
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
@@ -64,8 +64,9 @@ def main():
         if not url or url.startswith("#"):
             continue
             
-        print(f"正在抓取目录: {url}")
+        print(f"正在抓取目录: {url}", flush=True)
         items = parse_directory_listing(url)
+        print(f"  -> 发现有效视频: {len(items)} 个", flush=True)
         all_items.extend(items)
         
     # 生成标准的 M3U 播放列表
@@ -77,10 +78,9 @@ def main():
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
         f.write(m3u_content)
         
-    print(f"成功生成播放列表: {OUTPUT_M3U}，共收录 {len(all_items)} 个视频文件。")
+    print(f"成功生成播放列表: {OUTPUT_M3U}，共收录 {len(all_items)} 个视频文件。", flush=True)
 
 if __name__ == "__main__":
-    # 关闭 requests 的自签名证书警告
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     main()
