@@ -1,131 +1,123 @@
 import os
-import sys
-import time
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, unquote
+from itemsview import ItemsView
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SOURCES_FILE = "sources.txt"
 OUTPUT_M3U = "playlist.m3u"
-
-# 支持的视频格式后缀
 VIDEO_EXTENSIONS = ('.mp4', '.mkv', '.m3u8', '.ts', '.mov', '.avi', '.flv', '.webm')
+MAX_THREADS = 10  # 最大线程数
 
-# 模拟真实浏览器的 Header，防拦截
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Language": "zh-CN,zh;q=0.9"
 }
 
-def parse_directory_recursive(base_url, current_depth=1, max_depth=2, visited_dirs=None):
-    """
-    深度递归抓取目录及子目录下的视频文件
-    :param base_url: 当前访问的网址
-    :param current_depth: 当前递归深度
-    :param max_depth: 最大允许深入的层级（防止死循环和无限抓取）
-    :param visited_dirs: 已访问过的目录集合，防止循环引用
-    """
-    if visited_dirs is None:
-        visited_dirs = set()
-        
+def get_clean_filename(url):
+    """从URL中提取干净的文件名并解码"""
+    path = urlparse(url).path
+    filename = os.path.basename(path)
+    return unquote(filename)
+
+def parse_site(base_url, max_depth=5):
+    """单站点抓取逻辑"""
+    visited_dirs = set()
     media_items = []
-    
-    # 规范化 URL 避免重复访问
-    clean_base = base_url.rstrip('/') + '/'
-    if clean_base in visited_dirs or current_depth > max_depth:
-        return media_items
-    visited_dirs.add(clean_base)
-    
-    try:
-        print(f"[{current_depth}/{max_depth}] 正在深度抓取: {base_url}", flush=True)
-        # 超时时间延长至 12 秒，适应慢服务器
-        response = requests.get(base_url, headers=HEADERS, timeout=12, verify=False)
+
+    def recursive_crawl(current_url, depth):
+        if depth > max_depth:
+            return
         
-        if response.status_code != 200:
-            print(f"  -> 访问失败，状态码: {response.status_code}", flush=True)
-            return media_items
-        
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        for a_tag in soup.find_all('a', href=True):
-            href = a_tag['href'].strip()
+        clean_url = current_url.rstrip('/') + '/'
+        if clean_url in visited_dirs:
+            return
+        visited_dirs.add(clean_url)
+
+        try:
+            # 降低超时，增加响应速度
+            response = requests.get(current_url, headers=HEADERS, timeout=10, verify=False)
+            if response.status_code != 200:
+                return
             
-            # 过滤无效链接、父目录跳转及查询参数
-            if not href or href.startswith('?') or href.startswith('#') or href in ('../', './'):
-                continue
+            soup = BeautifulSoup(response.text, 'html.parser')
+            for a_tag in soup.find_all('a', href=True):
+                href = a_tag['href'].strip()
                 
-            absolute_url = urljoin(base_url, href)
-            parsed_path = urlparse(absolute_url).path.lower()
-            
-            # 1. 如果是子目录（以 '/' 结尾），且未超过最大深度，进行递归抓取
-            if href.endswith('/') and current_depth < max_depth:
-                # 排除可能导致死循环的特殊目录名称
-                if not any(skip in href.lower() for skip in ['login', 'logout', 'admin', 'search', 'tag']):
-                    sub_items = parse_directory_recursive(absolute_url, current_depth + 1, max_depth, visited_dirs)
-                    media_items.extend(sub_items)
-            
-            # 2. 如果是视频文件，严格校验后缀
-            elif parsed_path.endswith(VIDEO_EXTENSIONS):
-                file_name = os.path.basename(parsed_path)
-                
-                # 过滤太短的垃圾文件名或广告文件名
-                if len(file_name) < 4:
+                # 过滤常见无关链接
+                if not href or any(x in href.lower() for x in ['?C=', '?N=', '?S=', '?D=', '../', './']):
                     continue
-                    
-                domain_prefix = urlparse(base_url).netloc
-                media_items.append({
-                    "name": f"[{domain_prefix}] {file_name}",
-                    "url": absolute_url
-                })
+                if href.startswith(('mailto:', 'javascript:', '#')):
+                    continue
+
+                absolute_url = urljoin(current_url, href)
+                parsed = urlparse(absolute_url)
+                path_lower = parsed.path.lower()
+
+                # 目录判断：以/结尾，或者没有后缀名且不含点
+                is_dir = href.endswith('/') or ('.' not in os.path.basename(path_lower) and not path_lower.endswith(VIDEO_EXTENSIONS))
+
+                if is_dir:
+                    # 排除干扰目录名
+                    skip_keywords = ['login', 'etc', 'bin', 'search', 'style', 'assets']
+                    if not any(k in path_lower for k in skip_keywords):
+                        recursive_crawl(absolute_url, depth + 1)
                 
-    except requests.exceptions.Timeout:
-        print(f"  -> 连接超时 ({base_url})，跳过", flush=True)
-    except Exception as e:
-        print(f"  -> 解析异常 ({base_url}): {e}", flush=True)
-        
+                elif path_lower.endswith(VIDEO_EXTENSIONS):
+                    file_name = get_clean_filename(absolute_url)
+                    if len(file_name) > 3:
+                        domain = urlparse(base_url).netloc
+                        media_items.append({
+                            "name": f"[{domain}] {file_name}",
+                            "url": absolute_url,
+                            "group": domain
+                        })
+        except Exception as e:
+            pass # 递归中静默处理单页错误
+
+    recursive_crawl(base_url, 1)
     return media_items
 
 def main():
     if not os.path.exists(SOURCES_FILE):
-        print(f"未找到源文件: {SOURCES_FILE}", flush=True)
+        print(f"Error: {SOURCES_FILE} not found.")
         return
-        
+
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
-        lines = [line.strip() for line in f if line.strip() and not line.startswith("#")]
-        
-    total_sources = len(lines)
-    print(f"共读取到 {total_sources} 个有效源地址，开始遍历...", flush=True)
-    
+        urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+
     all_items = []
-    seen_urls = set()  # 用于全局 URL 去重
-    
-    for idx, url in enumerate(lines, 1):
-        print(f"\n({idx}/{total_sources}) 正在处理源: {url}", flush=True)
+    seen_urls = set()
+
+    print(f"开始任务，线程数: {MAX_THREADS}...")
+
+    # 使用线程池并发抓取不同网站
+    with ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
+        future_to_url = {executor.submit(parse_site, url): url for url in urls}
         
-        # 调用递归抓取（限制最大深度为 5 层，可按需调大）
-        items = parse_directory_recursive(url, current_depth=1, max_depth=5)
-        
-        added_count = 0
-        for item in items:
-            if item["url"] not in seen_urls:
-                seen_urls.add(item["url"])
-                all_items.append(item)
-                added_count += 1
-                
-        print(f"  -> 本源新增有效视频: {added_count} 个 (累计去重后: {len(all_items)} 个)", flush=True)
-        
-    # 生成标准的 M3U 播放列表
-    m3u_content = "#EXTM3U\n"
-    for item in all_items:
-        m3u_content += f"#EXTINF:-1,{item['name']}\n"
-        m3u_content += f"{item['url']}\n"
-        
+        for future in as_completed(future_to_url):
+            url = future_to_url[future]
+            try:
+                results = future.result()
+                count = 0
+                for item in results:
+                    if item["url"] not in seen_urls:
+                        seen_urls.add(item["url"])
+                        all_items.append(item)
+                        count += 1
+                print(f"完成: {url} (新增 {count} 条)")
+            except Exception as e:
+                print(f"失败: {url} 错误: {e}")
+
+    # 写入 M3U
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
-        f.write(m3u_content)
-        
-    print(f"\n==================== 任务完成 ====================", flush=True)
-    print(f"成功生成播放列表: {OUTPUT_M3U}，全局共收录 {len(all_items)} 个独立视频文件。", flush=True)
+        f.write("#EXTM3U\n")
+        for item in all_items:
+            # 增加 group-title 方便播放器分类
+            f.write(f'#EXTINF:-1 group-title="{item["group"]}",{item["name"]}\n')
+            f.write(f"{item['url']}\n")
+
+    print(f"\n任务结束，共收集 {len(all_items)} 个视频。")
 
 if __name__ == "__main__":
     import urllib3
