@@ -64,7 +64,7 @@ def main():
         if not url or url.startswith("#"):
             continue
             
-        print(正在抓取目录: {url})
+        print(f"正在抓取目录: {url}")
         items = parse_directory_listing(url)
         all_items.extend(items)
         
