@@ -27,6 +27,14 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: 缓存爬取数据库
+        uses: actions/cache@v4
+        with:
+          path: crawl_cache.db
+          key: ${{ runner.os }}-crawl-cache-${{ hashFiles('sources.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-crawl-cache-
+
       - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
@@ -41,4 +49,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add playlist.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist.m3u via video_fetcher [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist.m3u [skip ci]" && git push)
