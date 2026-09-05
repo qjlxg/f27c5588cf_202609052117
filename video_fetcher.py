@@ -1,56 +1,86 @@
 import os
-import subprocess
-from datetime import datetime, timezone, timedelta
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
 
-# 定义路径
 SOURCES_FILE = "sources.txt"
 OUTPUT_M3U = "playlist.m3u"
 
-def fetch_and_parse():
+# 支持的视频格式后缀
+VIDEO_EXTENSIONS = ('.mp4', '.mkv', '.m3u8', '.ts', '.mov', '.avi', '.flv', '.webm')
+
+def parse_directory_listing(base_url):
+    """访问目录列表页面，递归或直接提取所有视频文件链接"""
+    media_items = []
+    try:
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+        # 忽略 SSL 证书报错（针对部分自签名的测试/IP服务器）
+        response = requests.get(base_url, headers=headers, timeout=6, verify=False)
+        if response.status_code != 200:
+            return media_items
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # 遍历页面中所有的超链接 <a> 标签
+        for a_tag in soup.find_all('a', href=True):
+            href = a_tag['href']
+            
+            # 排除父目录跳转链接
+            if href.startswith('?') or href == '../' or href == './' or not href.strip():
+                continue
+                
+            # 拼接出视频文件的绝对直链
+            absolute_url = urljoin(base_url, href)
+            
+            # 检查链接是否以常见视频格式结尾（忽略大小写）
+            parsed_path = urlparse(absolute_url).path.lower()
+            if parsed_path.endswith(VIDEO_EXTENSIONS):
+                # 提取纯文件名作为显示名称
+                file_name = os.path.basename(parsed_path)
+                # 顺便把上级目录或服务器简写带上，方便在手机里区分来源
+                domain_prefix = urlparse(base_url).netloc
+                
+                media_items.append({
+                    "name": f"[{domain_prefix}] {file_name}",
+                    "url": absolute_url
+                })
+                
+    except Exception as e:
+        print(f"解析出错 {base_url}: {e}")
+        
+    return media_items
+
+def main():
     if not os.path.exists(SOURCES_FILE):
         print(f"未找到源文件: {SOURCES_FILE}")
-        return []
-    
+        return
+        
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         lines = f.readlines()
         
-    media_items = []
+    all_items = []
     for line in lines:
         url = line.strip()
         if not url or url.startswith("#"):
             continue
             
-        # 示例逻辑：解析或抓取文件名与真实视频链接
-        # 您可以根据实际情况修改这里的抓取/解析逻辑
-        filename = url.split("//")[-1].split("/")[0] # 简易提取域名/IP作为标识或文件名
+        print(正在抓取目录: {url})
+        items = parse_directory_listing(url)
+        all_items.extend(items)
         
-        # 假设我们最终拿到的是形如 (文件名, 视频直链) 的元组
-        media_items.append({
-            "name": f"视频源 - {filename}",
-            "url": url
-        })
-        
-    return media_items
-
-def generate_m3u(items):
-    # 如果您有独立的 convert_m3u.py，也可以通过子进程调用它，或者直接在这里生成标准 M3U
-    # 这里直接生成标准手机可播的 m3u 格式内容
+    # 生成标准的 M3U 播放列表
     m3u_content = "#EXTM3U\n"
-    for item in items:
+    for item in all_items:
         m3u_content += f"#EXTINF:-1,{item['name']}\n"
         m3u_content += f"{item['url']}\n"
         
     with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
         f.write(m3u_content)
-    print(f"成功生成播放列表: {OUTPUT_M3U}，共包含 {len(items)} 个条目。")
+        
+    print(f"成功生成播放列表: {OUTPUT_M3U}，共收录 {len(all_items)} 个视频文件。")
 
 if __name__ == "__main__":
-    # 如果本地有 convert_m3u.py，也可以选择在此调用
-    if os.path.exists("convert_m3u.py"):
-        print("检测到 convert_m3u.py，正在协同处理...")
-        # 视您的 convert_m3u.py 接口而定，可直接调用
-        subprocess.run(["python", "convert_m3u.py"], check=False)
-    
-    items = fetch_and_parse()
-    if items:
-        generate_m3u(items)
+    # 关闭 requests 的自签名证书警告
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    main()
