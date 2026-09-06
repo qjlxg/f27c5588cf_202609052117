@@ -18,7 +18,6 @@ SOURCES_FILE = "sources.txt"
 CACHE_DB = "crawl_cache.db"
 VIDEO_EXTENSIONS = ('.mp4', '.mkv', '.m3u8', '.ts', '.mov', '.avi', '.flv', '.webm')
 MAX_THREADS = 10  # 爬取线程数
-VALIDATE_THREADS = 20  # 验证线程数
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -85,23 +84,8 @@ def get_clean_filename(url):
     except Exception:
         return "unknown_video"
 
-def is_url_valid(url, session):
-    """通过 HEAD/GET 请求验证 URL 是否有效"""
-    try:
-        response = session.head(url, headers=HEADERS, timeout=7, verify=False, allow_redirects=True)
-        if response.status_code == 200:
-            return True
-    except Exception:
-        pass
-
-    try:
-        response = session.get(url, headers=HEADERS, timeout=7, verify=False, stream=True)
-        return response.status_code == 200
-    except Exception:
-        return False
-
 def parse_site(base_url, max_depth=3):
-    """阶段一：递归收集链接（支持3层：根目录 -> 合集 -> 文件）"""
+    """递归收集链接（支持3层：根目录 -> 合集 -> 文件）"""
     cached = get_cached_candidates(base_url)
     if cached is not None:
         return base_url, cached
@@ -119,7 +103,7 @@ def parse_site(base_url, max_depth=3):
             return
         visited_dirs.add(clean_url)
 
-        time.sleep(random.uniform(0.2, 0.5))
+        time.sleep(random.uniform(0.1, 0.3))
 
         try:
             response = session.get(current_url, headers=HEADERS, timeout=10, verify=False)
@@ -165,10 +149,12 @@ def main():
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         urls = [line.strip() for line in f if line.strip() and not line.startswith("#")][:100]
 
-    print(f"开始任务，并发线程数: {MAX_THREADS} (当前限制处理前 100 个源)")
-    print(f"阶段一：正在深度爬取目录 (Max Depth: 3)...")
+    print(f"开始任务，并发线程数: {MAX_THREADS} (限制处理前 100 个源)")
+    print(f"正在深度爬取目录 (Max Depth: 3)...")
 
-    site_candidates = {}
+    all_items = []
+    seen_urls = set()
+
     with ThreadPoolExecutor(max_workers=MAX_THREADS) as crawl_executor:
         future_to_url = {crawl_executor.submit(parse_site, url, 3): url for url in urls}
 
@@ -176,51 +162,24 @@ def main():
             url = future_to_url[future]
             try:
                 base_url, candidates = future.result()
-                site_candidates[base_url] = candidates
-                print(f"  [+] {base_url} -> 发现 {len(candidates)} 个候选链接")
+                domain = urlparse(base_url).netloc
+                for cand_url in candidates:
+                    if cand_url not in seen_urls:
+                        seen_urls.add(cand_url)
+                        file_name = get_clean_filename(cand_url)
+                        if len(file_name) > 3:
+                            ext = os.path.splitext(cand_url)[1].lower()
+                            if not ext:
+                                ext = ".unknown"
+                            all_items.append({
+                                "name": f"[{domain}] {file_name}",
+                                "url": cand_url,
+                                "group": domain,
+                                "ext": ext
+                            })
+                print(f"  [+] {base_url} -> 发现并收录 {len(candidates)} 个视频链接")
             except Exception as e:
                 print(f"  [!] {url} 爬取失败: {e}")
-
-    print(f"\n阶段二：正在并发验证链接存活性 (并发数: {VALIDATE_THREADS})...")
-
-    all_items = []
-    seen_urls = set()
-    validate_session = get_session(VALIDATE_THREADS)
-
-    with ThreadPoolExecutor(max_workers=VALIDATE_THREADS) as val_executor:
-        future_to_info = {}
-        for base_url, candidates in site_candidates.items():
-            domain = urlparse(base_url).netloc
-            for cand_url in candidates:
-                if cand_url not in seen_urls:
-                    seen_urls.add(cand_url)
-                    future = val_executor.submit(is_url_valid, cand_url, validate_session)
-                    future_to_info[future] = (domain, cand_url)
-
-        total_to_verify = len(future_to_info)
-        processed = 0
-
-        for future in as_completed(future_to_info):
-            domain, cand_url = future_to_info[future]
-            processed += 1
-            try:
-                if future.result():
-                    file_name = get_clean_filename(cand_url)
-                    if len(file_name) > 3:
-                        ext = os.path.splitext(cand_url)[1].lower()
-                        if not ext:
-                            ext = ".unknown"
-                        all_items.append({
-                            "name": f"[{domain}] {file_name}",
-                            "url": cand_url,
-                            "group": domain,
-                            "ext": ext
-                        })
-            except Exception:
-                pass
-
-            if processed % 10 == 0 or processed == total_to_verify:
-                print(f"\r  进度: {processed}/{total_to_verify} (已找到有效视频: {len(all_items)})", end="", flush=True)
 
     print("\n")
     if all_items:
@@ -242,7 +201,7 @@ def main():
                 for item in items:
                     f.write(f'#EXTINF:-1 group-title="{item["group"]}",{item["name"]}\n')
                     f.write(f"{item['url']}\n")
-            print(f"已生成分类播放列表: {output_filename} (包含 {len(items)} 个有效资源)")
+            print(f"已生成分类播放列表: {output_filename} (包含 {len(items)} 个资源)")
 
         print(f"\n任务圆满结束，总有效资源: {len(all_items)}")
     else:
