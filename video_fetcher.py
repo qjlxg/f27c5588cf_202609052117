@@ -96,7 +96,7 @@ def is_url_valid(url, session):
             return True
     except Exception:
         pass
-    
+
     try:
         # 如果 HEAD 不行，尝试 GET 流式请求（只读头部）
         response = session.get(url, headers=HEADERS, timeout=7, verify=False, stream=True)
@@ -118,7 +118,7 @@ def parse_site(base_url, max_depth=3):
     def recursive_crawl(current_url, depth):
         if depth > max_depth:
             return
-        
+
         # 规范化 URL 避免重复访问
         clean_url = current_url.rstrip('/') + '/'
         if clean_url in visited_dirs:
@@ -132,11 +132,11 @@ def parse_site(base_url, max_depth=3):
             response = session.get(current_url, headers=HEADERS, timeout=10, verify=False)
             if response.status_code != 200:
                 return
-            
+
             soup = BeautifulSoup(response.text, 'html.parser')
             for a_tag in soup.find_all('a', href=True):
                 href = a_tag['href'].strip()
-                
+
                 # 过滤无关链接
                 if not href or any(x in href.lower() for x in ['?c=', '?n=', '?s=', '?d=', '../', './']):
                     continue
@@ -175,12 +175,13 @@ def main():
         urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
     print(f"开始任务，并发线程数: {MAX_THREADS}")
-    print(f"阶段一：正在深度爬取目录 (Max Depth: 3)...")
+    print(f"阶段一：正在深度爬取目录 (Max Depth: 2)...")
 
     site_candidates = {}
     with ThreadPoolExecutor(max_workers=MAX_THREADS) as crawl_executor:
+        # 将默认最大深度降为 2 级，防止文件过大导致播放器卡死
         future_to_url = {crawl_executor.submit(parse_site, url, 2): url for url in urls}
-        
+
         for future in as_completed(future_to_url):
             url = future_to_url[future]
             try:
@@ -191,12 +192,12 @@ def main():
                 print(f"  [!] {url} 爬取失败: {e}")
 
     print(f"\n阶段二：正在并发验证链接存活性 (并发数: {VALIDATE_THREADS})...")
-    
+
     all_items = []
     seen_urls = set()
     # 验证阶段使用大连接池 Session
     validate_session = get_session(VALIDATE_THREADS)
-    
+
     with ThreadPoolExecutor(max_workers=VALIDATE_THREADS) as val_executor:
         future_to_info = {}
         for base_url, candidates in site_candidates.items():
@@ -209,7 +210,7 @@ def main():
 
         total_to_verify = len(future_to_info)
         processed = 0
-        
+
         for future in as_completed(future_to_info):
             domain, cand_url = future_to_info[future]
             processed += 1
@@ -224,7 +225,7 @@ def main():
                         })
             except Exception:
                 pass
-            
+
             if processed % 10 == 0 or processed == total_to_verify:
                 print(f"\r  进度: {processed}/{total_to_verify} (已找到有效视频: {len(all_items)})", end="", flush=True)
 
@@ -232,7 +233,7 @@ def main():
     if all_items:
         # 按域名分组排序，让播放列表更整齐
         all_items.sort(key=lambda x: x['group'])
-        
+
         with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in all_items:
