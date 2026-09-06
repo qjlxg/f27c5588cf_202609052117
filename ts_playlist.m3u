@@ -1,0 +1,139 @@
+#EXTM3U
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] VES_RTVE_close_30_171525_3840x2160_18000Kbps_hevc_st.ts
+http://117.78.51.109:8080/TS/VES_RTVE_close_30_171525_3840x2160_18000Kbps_hevc_st.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] avs2[4K]私人订制.ts
+http://117.78.51.109:8080/AVS2/avs2%5B4K%5D%E7%A7%81%E4%BA%BA%E8%AE%A2%E5%88%B6.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-18.ts
+http://117.78.51.109:8080/DRMTestStream/0-18.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-10.ts
+http://117.78.51.109:8080/DRMTestStream/0-10.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-22.ts
+http://117.78.51.109:8080/DRMTestStream/0-22.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] VideoMPEG_AudioDRA.ts
+http://117.78.51.109:8080/TS/VideoMPEG_AudioDRA.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-6.ts
+http://117.78.51.109:8080/DRMTestStream/0-6.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 4K-P50.ts
+http://117.78.51.109:8080/TS/4K-P50.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 4K-AVS2-50P-36M-5m.ts
+http://117.78.51.109:8080/AVS2/4K-AVS2-50P-36M-5m.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-19.ts
+http://117.78.51.109:8080/DRMTestStream/0-19.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-26.ts
+http://117.78.51.109:8080/DRMTestStream/0-26.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0.ts
+http://117.78.51.109:8080/DRMTestStream/0.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-11.ts
+http://117.78.51.109:8080/DRMTestStream/0-11.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-17.ts
+http://117.78.51.109:8080/DRMTestStream/0-17.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-2.ts
+http://117.78.51.109:8080/DRMTestStream/0-2.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 4KRoastDuck_VideoH265.ts
+http://117.78.51.109:8080/TS/4KRoastDuck_VideoH265.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-15.ts
+http://117.78.51.109:8080/DRMTestStream/0-15.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-13.ts
+http://117.78.51.109:8080/DRMTestStream/0-13.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] ts_MPEGVideo_MP@HP_17.9MKbps_8b_18.3Mbps1280x720.ts
+http://117.78.51.109:8080/TS/ts_MPEGVideo_MP%40HP_17.9MKbps_8b_18.3Mbps1280x720.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-9.ts
+http://117.78.51.109:8080/DRMTestStream/0-9.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] ZhangShu_VideoH264.ts
+http://117.78.51.109:8080/TS/ZhangShu_VideoH264.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] nonvivid.TS
+http://117.78.51.109:8080/Audiovivid/nonvivid.TS
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-5.ts
+http://117.78.51.109:8080/DRMTestStream/0-5.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 8KAVS3HDRvivid+audiovivid-50P-120M.ts
+http://117.78.51.109:8080/TS/8KAVS3HDRvivid%2Baudiovivid-50P-120M.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-1.ts
+http://117.78.51.109:8080/DRMTestStream/0-1.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] vivid.TS
+http://117.78.51.109:8080/Audiovivid/vivid.TS
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-8.ts
+http://117.78.51.109:8080/DRMTestStream/0-8.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-20.ts
+http://117.78.51.109:8080/DRMTestStream/0-20.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-24.ts
+http://117.78.51.109:8080/DRMTestStream/0-24.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 8KAVS3HDRvivid+audiovivid-50P-120M_5s.ts
+http://117.78.51.109:8080/AVS3/8KAVS3HDRvivid%2Baudiovivid-50P-120M_5s.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-21.ts
+http://117.78.51.109:8080/DRMTestStream/0-21.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-4.ts
+http://117.78.51.109:8080/DRMTestStream/0-4.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-12.ts
+http://117.78.51.109:8080/DRMTestStream/0-12.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] dmx_test_stream.ts
+http://117.78.51.109:8080/TS/dmx_test_stream.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-7.ts
+http://117.78.51.109:8080/DRMTestStream/0-7.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-16.ts
+http://117.78.51.109:8080/DRMTestStream/0-16.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] [HD]_MPEG4_10.3Mbps_1920x1080_MPEG1_AudioLayer3_128Kbps_2channels_001.ts
+http://117.78.51.109:8080/TS/%5BHD%5D_MPEG4_10.3Mbps_1920x1080_MPEG1_AudioLayer3_128Kbps_2channels_001.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-25.ts
+http://117.78.51.109:8080/DRMTestStream/0-25.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 60p.ts
+http://117.78.51.109:8080/TS/60p.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-23.ts
+http://117.78.51.109:8080/DRMTestStream/0-23.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] VideoAVS_AudioMPEGA_001.ts
+http://117.78.51.109:8080/TS/VideoAVS_AudioMPEGA_001.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 8KAVS3HDRvivid+audiovivid-50P-120M.ts
+http://117.78.51.109:8080/AVS3/8KAVS3HDRvivid%2Baudiovivid-50P-120M.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-3.ts
+http://117.78.51.109:8080/DRMTestStream/0-3.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] multiChannel.ts
+http://117.78.51.109:8080/TS/multiChannel.ts
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 0-14.ts
+http://117.78.51.109:8080/DRMTestStream/0-14.ts
+#EXTINF:-1 group-title="119.45.185.25:10000",[119.45.185.25:10000] Cesium.d.ts
+http://119.45.185.25:10000/Cesium/Cesium.d.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_2.ts
+http://152.136.125.142:8888/addtext/seg_2.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_012.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_012.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_013.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_013.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_1.ts
+http://152.136.125.142:8888/addtext/seg_1.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_009.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_009.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_006.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_006.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_015.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_015.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_018.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_018.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_010.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_010.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_001.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_001.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_003.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_003.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_014.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_014.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_007.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_007.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_017.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_017.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_3.ts
+http://152.136.125.142:8888/addtext/seg_3.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_004.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_004.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_002.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_002.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_019.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_019.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_011.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_011.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_008.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_008.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_016.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_016.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_4.ts
+http://152.136.125.142:8888/addtext/seg_4.ts
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] seg_005.ts
+http://152.136.125.142:8888/baidu_shrimp/seg_005.ts

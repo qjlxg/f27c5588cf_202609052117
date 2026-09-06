@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] VideoVP6.flv
+http://117.78.51.109:8080/FLV/VideoVP6.flv
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] https-flv.flv
+http://117.78.51.109:8080/HTTPS-FLV/https-flv.flv
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] Toyota-Adv.flv
+http://117.78.51.109:8080/FLV/Toyota-Adv.flv
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] https-VideoVP6.flv
+http://117.78.51.109:8080/HTTPS-FLV/https-VideoVP6.flv
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] flv.flv
+http://117.78.51.109:8080/FLV/flv.flv
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] https-Toyota-Adv.flv
+http://117.78.51.109:8080/HTTPS-FLV/https-Toyota-Adv.flv
+#EXTINF:-1 group-title="www.tw.dhakini.com",[www.tw.dhakini.com] 20140111.flv
+https://www.tw.dhakini.com/20140111.flv
