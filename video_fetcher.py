@@ -179,7 +179,7 @@ def main():
 
     site_candidates = {}
     with ThreadPoolExecutor(max_workers=MAX_THREADS) as crawl_executor:
-        future_to_url = {crawl_executor.submit(parse_site, url, 3): url for url in urls}
+        future_to_url = {crawl_executor.submit(parse_site, url, 2): url for url in urls}
         
         for future in as_completed(future_to_url):
             url = future_to_url[future]
