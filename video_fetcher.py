@@ -163,9 +163,9 @@ def main():
     init_db()
 
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
-        urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]［100］
+        urls = [line.strip() for line in f if line.strip() and not line.startswith("#")][:100]
 
-    print(f"开始任务，并发线程数: {MAX_THREADS}")
+    print(f"开始任务，并发线程数: {MAX_THREADS} (当前限制处理前 100 个源)")
     print(f"阶段一：正在深度爬取目录 (Max Depth: 3)...")
 
     site_candidates = {}
@@ -207,7 +207,6 @@ def main():
                 if future.result():
                     file_name = get_clean_filename(cand_url)
                     if len(file_name) > 3:
-                        # 提取文件扩展名作为分类依据
                         ext = os.path.splitext(cand_url)[1].lower()
                         if not ext:
                             ext = ".unknown"
@@ -225,7 +224,6 @@ def main():
 
     print("\n")
     if all_items:
-        # 按文件扩展名进行分类拆分，生成多个独立的 m3u 文件
         ext_groups = {}
         for item in all_items:
             ext = item['ext']
@@ -234,11 +232,9 @@ def main():
             ext_groups[ext].append(item)
 
         for ext, items in ext_groups.items():
-            # 去掉点号，例如 .mp4 变成 mp4_playlist.m3u
             ext_name = ext.lstrip('.')
             output_filename = f"{ext_name}_playlist.m3u"
             
-            # 组内按域名排序
             items.sort(key=lambda x: x['group'])
 
             with open(output_filename, "w", encoding="utf-8") as f:
