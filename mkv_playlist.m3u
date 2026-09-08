@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 group-title="106.52.23.108:8003",[106.52.23.108:8003] 《O娘的故事》The.Story.Of.O.1975.720p.BluRay.x264-Japhson-人人影视高清发布组.mkv
+http://106.52.23.108:8003/%E3%80%8AO%E5%A8%98%E7%9A%84%E6%95%85%E4%BA%8B%E3%80%8BThe.Story.Of.O.1975.720p.BluRay.x264-Japhson-%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86%E9%AB%98%E6%B8%85%E5%8F%91%E5%B8%83%E7%BB%84.mkv
 #EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] https-LaBiXiaoXin_MultiTrack.mkv
 http://117.78.51.109:8080/HTTPS-MKV/https-LaBiXiaoXin_MultiTrack.mkv
 #EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] John.Wick.Chapter.2.2017.1080p.BluRay.x264.DTS-HD.MA.7.1-FGT.mkv
@@ -51,6 +53,166 @@ http://117.78.51.109:8080/MKV/%5BWatcher%5D%5BE014%28720P%29%5D%5BKO_CN%5D.mkv
 http://117.78.51.109:8080/AVS2/CCTV4K.AVS2-10bit.AC3.CB.08-27-6s.mkv
 #EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] 4KJapan_VideoH265_AudioAAC.mkv
 http://117.78.51.109:8080/MKV/4KJapan_VideoH265_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] CCTV4K.AVS2-10bit.AC3.CB.08-27-6s.mkv
+https://117.78.51.109:8443/AVS2/CCTV4K.AVS2-10bit.AC3.CB.08-27-6s.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-SanShaoYe_VideoH264_AudioAAC.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-SanShaoYe_VideoH264_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] LaBiXiaoXin_MultiTrack.mkv
+https://117.78.51.109:8443/MKV/LaBiXiaoXin_MultiTrack.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-John.Wick.Chapter.2.2017.1080p.BluRay.x264.DTS-HD.MA.7.1-FGT.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-John.Wick.Chapter.2.2017.1080p.BluRay.x264.DTS-HD.MA.7.1-FGT.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-LaBiXiaoXin_MultiTrack.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-LaBiXiaoXin_MultiTrack.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] GuanYin_VideoH265_AudioAAC.mkv
+https://117.78.51.109:8443/MKV/GuanYin_VideoH265_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] 海滨别墅.mkv
+https://117.78.51.109:8443/%E6%B5%B7%E6%BB%A8%E5%88%AB%E5%A2%85.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] 世纪大劫案.mkv
+https://117.78.51.109:8443/%E4%B8%96%E7%BA%AA%E5%A4%A7%E5%8A%AB%E6%A1%88.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-[Watcher][E014(720P)][KO_CN].mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-%5BWatcher%5D%5BE014%28720P%29%5D%5BKO_CN%5D.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-SpuerSeller_VideoRV40_AudioAAC.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-SpuerSeller_VideoRV40_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-Table.19_VideoH264_AudioDTS.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-Table.19_VideoH264_AudioDTS.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] Table.19_VideoH264_AudioDTS.mkv
+https://117.78.51.109:8443/MKV/Table.19_VideoH264_AudioDTS.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] SpuerSeller_VideoRV40_AudioAAC.mkv
+https://117.78.51.109:8443/MKV/SpuerSeller_VideoRV40_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] test1_avs2.mkv
+https://117.78.51.109:8443/AVS2/test1_avs2.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] [Watcher][E014(720P)][KO_CN].mkv
+https://117.78.51.109:8443/MKV/%5BWatcher%5D%5BE014%28720P%29%5D%5BKO_CN%5D.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] [HD]_MPEG-2Video_1920x1080_DTS-HD_1561Kbps-1510Kbps_6channels.mkv
+https://117.78.51.109:8443/MKV/%5BHD%5D_MPEG-2Video_1920x1080_DTS-HD_1561Kbps-1510Kbps_6channels.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] SuperDuck_VideoRV40_AudioAAC.mkv
+https://117.78.51.109:8443/MKV/SuperDuck_VideoRV40_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] 4KJapan_VideoH265_AudioAAC.mkv
+https://117.78.51.109:8443/MKV/4KJapan_VideoH265_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-GuanYin_VideoH265_AudioAAC.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-GuanYin_VideoH265_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] SanShaoYe_VideoH264_AudioAAC.mkv
+https://117.78.51.109:8443/MKV/SanShaoYe_VideoH264_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] 我很在乎.mkv
+https://117.78.51.109:8443/%E6%88%91%E5%BE%88%E5%9C%A8%E4%B9%8E.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-4KJapan_VideoH265_AudioAAC.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-4KJapan_VideoH265_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] https-SuperDuck_VideoRV40_AudioAAC.mkv
+https://117.78.51.109:8443/HTTPS-MKV/https-SuperDuck_VideoRV40_AudioAAC.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] 8k_video_ultrahd_60fps_test_for_tv.MKV
+https://117.78.51.109:8443/MKV/8k_video_ultrahd_60fps_test_for_tv.MKV
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] John.Wick.Chapter.2.2017.1080p.BluRay.x264.DTS-HD.MA.7.1-FGT.mkv
+https://117.78.51.109:8443/MKV/John.Wick.Chapter.2.2017.1080p.BluRay.x264.DTS-HD.MA.7.1-FGT.mkv
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] [HD]_MPEG-2Video_1920x1080_DTS-HD_1561Kbps-1510Kbps_6channels.mkv
+https://117.78.51.109:8443/HTTPS-MKV/%5BHD%5D_MPEG-2Video_1920x1080_DTS-HD_1561Kbps-1510Kbps_6channels.mkv
+#EXTINF:-1 group-title="123.112.17.107:40000",[123.112.17.107:40000] [Pre-S&三明治摸鱼部&Y-Raws] 超时空辉夜姬 Cosmic Princess Kaguya [WebRip 1080P HEVC 10Bit EAC3&AAC MKV][CHI_JPN].mkv
+http://123.112.17.107:40000/downloads/%5BPre-S%26%E4%B8%89%E6%98%8E%E6%B2%BB%E6%91%B8%E9%B1%BC%E9%83%A8%26Y-Raws%5D%20%E8%B6%85%E6%97%B6%E7%A9%BA%E8%BE%89%E5%A4%9C%E5%A7%AC%20Cosmic%20Princess%20Kaguya%20%5BWebRip%201080P%20HEVC%2010Bit%20EAC3%26AAC%20MKV%5D%5BCHI_JPN%5D.mkv
+#EXTINF:-1 group-title="123.112.17.107:40000",[123.112.17.107:40000] [Pre-S&三明治摸鱼部&Y-Raws] 超时空辉夜姬 Cosmic Princess Kaguya [WebRip 1080P HEVC 10Bit EAC3&AAC MKV][CHI_JPN].mkv
+http://123.112.17.107:40000/%E5%8A%A8%E6%BC%AB/%5BPre-S%26%E4%B8%89%E6%98%8E%E6%B2%BB%E6%91%B8%E9%B1%BC%E9%83%A8%26Y-Raws%5D%20%E8%B6%85%E6%97%B6%E7%A9%BA%E8%BE%89%E5%A4%9C%E5%A7%AC%20Cosmic%20Princess%20Kaguya%20%5BWebRip%201080P%20HEVC%2010Bit%20EAC3%26AAC%20MKV%5D%5BCHI_JPN%5D.mkv
+#EXTINF:-1 group-title="123.56.235.70",[123.56.235.70] donghua-guanwuliangshoujing1.mkv
+http://123.56.235.70/jt4/donghua-guanwuliangshoujing1.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+http://194.29.186.188/Drama/Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+http://194.29.186.188/Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] Midway.2019.1080p.BluRay.x264-AAA.mkv
+http://194.29.186.188/Midway.2019.1080p.BluRay.x264-AAA.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] DPMX-010.mkv
+http://194.29.186.188/VA/DPMX-010.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] 蔡森20250526經典技術分析第419集美債ETF跌成狗!債匯雙逼股! 美國總統不要臉宇宙無敵! 中國的未來科技! 小波段的歡樂時光!.mkv
+http://194.29.186.188/%E8%94%A1%E6%A3%AE20250526%E7%B6%93%E5%85%B8%E6%8A%80%E8%A1%93%E5%88%86%E6%9E%90%E7%AC%AC419%E9%9B%86%E7%BE%8E%E5%82%B5ETF%E8%B7%8C%E6%88%90%E7%8B%97!%E5%82%B5%E5%8C%AF%E9%9B%99%E9%80%BC%E8%82%A1!%20%E7%BE%8E%E5%9C%8B%E7%B8%BD%E7%B5%B1%E4%B8%8D%E8%A6%81%E8%87%89%E5%AE%87%E5%AE%99%E7%84%A1%E6%95%B5!%20%E4%B8%AD%E5%9C%8B%E7%9A%84%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80!%20%E5%B0%8F%E6%B3%A2%E6%AE%B5%E7%9A%84%E6%AD%A1%E6%A8%82%E6%99%82%E5%85%89!.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] DPMX-004.mkv
+http://194.29.186.188/VA/DPMX-004.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] The.Adjustment.Bureau.2011.1080p.BluRay.x264-CiNEFiLE.mkv
+http://194.29.186.188/The.Adjustment.Bureau.2011.1080p.BluRay.x264-CiNEFiLE.mkv
+#EXTINF:-1 group-title="194.29.186.188",[194.29.186.188] DMDG-020.1080p.mkv
+http://194.29.186.188/CGC/DMDG-020.1080p.mkv
+#EXTINF:-1 group-title="219.135.170.185:8513",[219.135.170.185:8513] 169502872235062.mkv
+http://219.135.170.185:8513/169502872235062.mkv
+#EXTINF:-1 group-title="219.135.170.185:8513",[219.135.170.185:8513] 169511943982137.mkv
+http://219.135.170.185:8513/169511943982137.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E15.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E15.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 恩娇.Eungyo.2012.KR.BluRay.1920x1024p.x264.DTS-KOOK.[中英字幕].mkv
+http://223.167.134.80:81/%e6%81%a9%e5%a8%87.Eungyo.2012.KR.BluRay.1920x1024p.x264.DTS-KOOK.%5b%e4%b8%ad%e8%8b%b1%e5%ad%97%e5%b9%95%5d.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 蚁人与黄蜂女：量子狂潮.2023.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e8%9a%81%e4%ba%ba%e4%b8%8e%e9%bb%84%e8%9c%82%e5%a5%b3%ef%bc%9a%e9%87%8f%e5%ad%90%e7%8b%82%e6%bd%ae.2023.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E06.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E06.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E03.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E03.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E12.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E12.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 悬崖之上.2021.BD.1080P.国语中英双字.mkv
+http://223.167.134.80:81/%e6%82%ac%e5%b4%96%e4%b9%8b%e4%b8%8a.2021.BD.1080P.%e5%9b%bd%e8%af%ad%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E04.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E04.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 原罪.未删减版.Original.Sin.2001.UNRATED.1080p.BluRay.x264-homefei.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e5%8e%9f%e7%bd%aa.%e6%9c%aa%e5%88%a0%e5%87%8f%e7%89%88.Original.Sin.2001.UNRATED.1080p.BluRay.x264-homefei.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 变形金刚：超能勇士崛起.2023.BD.1080P.国英双语双字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e5%8f%98%e5%bd%a2%e9%87%91%e5%88%9a%ef%bc%9a%e8%b6%85%e8%83%bd%e5%8b%87%e5%a3%ab%e5%b4%9b%e8%b5%b7.2023.BD.1080P.%e5%9b%bd%e8%8b%b1%e5%8f%8c%e8%af%ad%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] Avatar.Fire.and.Ash.2025.2160p.iT.WEB-DL.DV.H.265.DDP5.1.Atmos-QuickIO.mkv
+http://223.167.134.80:81/Avatar.Fire.and.Ash.2025.2160p.iT.WEB-DL.DV.H.265.DDP5.1.Atmos-QuickIO.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E05.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E05.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 西线无战事.2022.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e8%a5%bf%e7%ba%bf%e6%97%a0%e6%88%98%e4%ba%8b.2022.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E05.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E05.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 扫毒3：人在天涯.2023.BD.1080P.国粤双语中字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e6%89%ab%e6%af%923%ef%bc%9a%e4%ba%ba%e5%9c%a8%e5%a4%a9%e6%b6%af.2023.BD.1080P.%e5%9b%bd%e7%b2%a4%e5%8f%8c%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E02.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E02.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E01.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E01.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 电锯惊魂10.2023.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e7%94%b5%e9%94%af%e6%83%8a%e9%ad%8210.2023.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E03.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E03.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 飞驰人生3.Pegasus.3.2026.2160p.WEB-DL.H265.HQ.60fps.DTS5.1.3Audios-PandaQT.mkv
+http://223.167.134.80:81/%e9%a3%9e%e9%a9%b0%e4%ba%ba%e7%94%9f3.Pegasus.3.2026.2160p.WEB-DL.H265.HQ.60fps.DTS5.1.3Audios-PandaQT.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 回廊亭.2023.HD.1080P.国语中字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e5%9b%9e%e5%bb%8a%e4%ba%ad.2023.HD.1080P.%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E01.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E01.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E02.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E02.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 第十一回.2021.HD.1080P.国语中英双字.mkv
+http://223.167.134.80:81/%e7%ac%ac%e5%8d%81%e4%b8%80%e5%9b%9e.2021.HD.1080P.%e5%9b%bd%e8%af%ad%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 敢死队4：最终章.2023.HD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e6%95%a2%e6%ad%bb%e9%98%9f4%ef%bc%9a%e6%9c%80%e7%bb%88%e7%ab%a0.2023.HD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 利刃出鞘2.2022.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e5%88%a9%e5%88%83%e5%87%ba%e9%9e%982.2022.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 她.BD中英双字1024高清.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e5%a5%b9.BD%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%971024%e9%ab%98%e6%b8%85.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 复仇狗联盟.2023.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e5%a4%8d%e4%bb%87%e7%8b%97%e8%81%94%e7%9b%9f.2023.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 碟中谍7：致命清算（上）.2023.HD.1080P.国英双语双字.mkv
+http://223.167.134.80:81/%e7%a2%9f%e4%b8%ad%e8%b0%8d7%ef%bc%9a%e8%87%b4%e5%91%bd%e6%b8%85%e7%ae%97%ef%bc%88%e4%b8%8a%ef%bc%89.2023.HD.1080P.%e5%9b%bd%e8%8b%b1%e5%8f%8c%e8%af%ad%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 惊声尖叫6.2023.BD.1080P.中英双字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e6%83%8a%e5%a3%b0%e5%b0%96%e5%8f%ab6.2023.BD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 机智的监狱生活.2017.S01.E16.mkv
+http://223.167.134.80:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.S01.%e9%9f%a9%e5%9b%bd.2017.%e5%96%9c%e5%89%a7.16%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e7%9b%91%e7%8b%b1%e7%94%9f%e6%b4%bb.2017.S01.E16.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 我经过风暴.2023.HD.1080P.国语中英双字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e6%88%91%e7%bb%8f%e8%bf%87%e9%a3%8e%e6%9a%b4.2023.HD.1080P.%e5%9b%bd%e8%af%ad%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 燃冬.2023.HD.1080P.国语中字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e7%87%83%e5%86%ac.2023.HD.1080P.%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 神探大战.2022.BD.1080P.国粤双语中字.mkv
+http://223.167.134.80:81/%e7%a5%9e%e6%8e%a2%e5%a4%a7%e6%88%98.2022.BD.1080P.%e5%9b%bd%e7%b2%a4%e5%8f%8c%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 总是有爱在隔离.2021.HD.1080P.国粤双语中字.mkv
+http://223.167.134.80:81/%e6%80%bb%e6%98%af%e6%9c%89%e7%88%b1%e5%9c%a8%e9%9a%94%e7%a6%bb.2021.HD.1080P.%e5%9b%bd%e7%b2%a4%e5%8f%8c%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] The.Night.Manager.S01E04.720p.BluRay.x264-SHORTBREHD.mkv
+http://223.167.134.80:81/%e5%a4%9c%e7%8f%ad%e7%bb%8f%e7%90%86.The.Night.Manager.S01.720p.BluRay.x264/The.Night.Manager.S01E04.720p.BluRay.x264-SHORTBREHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 夺冠.BD.1080p.国语中字.mkv
+http://223.167.134.80:81/%e5%a4%ba%e5%86%a0.BD.1080p.%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] Prometheus.2012.2160p.UHD.BluRay.x265.10bit.HDR.DTS-HD.MA.7.1-SONYHD.mkv
+http://223.167.134.80:81/Prometheus.2012.2160p.UHD.BluRay.x265.10bit.HDR.DTS-HD.MA.7.1-SONYHD.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 安德的游戏BD双语双字.mkv
+http://223.167.134.80:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e5%ae%89%e5%be%b7%e7%9a%84%e6%b8%b8%e6%88%8fBD%e5%8f%8c%e8%af%ad%e5%8f%8c%e5%ad%97.mkv
+#EXTINF:-1 group-title="223.167.134.80:81",[223.167.134.80:81] 世界上最糟糕的人.2021.BD.1080P.中字.mkv
+http://223.167.134.80:81/%e4%b8%96%e7%95%8c%e4%b8%8a%e6%9c%80%e7%b3%9f%e7%b3%95%e7%9a%84%e4%ba%ba.2021.BD.1080P.%e4%b8%ad%e5%ad%97.mkv
+#EXTINF:-1 group-title="42.193.230.75:8000",[42.193.230.75:8000] test30s.mkv
+http://42.193.230.75:8000/test30s.mkv
 #EXTINF:-1 group-title="60.251.111.213",[60.251.111.213] Top Gun：Maverick《捍衛戰士：獨行俠》.mkv
 http://60.251.111.213/%e6%8d%8d%e8%a1%9b%e6%88%b0%e5%a3%ab2%ef%bc%9a%e7%8d%a8%e8%a1%8c%e4%bf%a0/Top%20Gun%ef%bc%9aMaverick%e3%80%8a%e6%8d%8d%e8%a1%9b%e6%88%b0%e5%a3%ab%ef%bc%9a%e7%8d%a8%e8%a1%8c%e4%bf%a0%e3%80%8b.mkv
 #EXTINF:-1 group-title="60.251.111.213",[60.251.111.213] Clown in a Cornfield 2025 1080p AMZN WEB-DL DDP5 1 H 264-BYNDR.mkv
@@ -531,6 +693,40 @@ http://60.251.111.213/%e7%a5%9e%e4%bd%88%e5%b1%80/Beyond.the.Edge.2018.1080p.Blu
 http://60.251.111.213/%e9%af%8a%e6%b5%b7%e5%9b%b0%e9%ac%a5/The.Requin.2022.2160p.WEB-DL.x265.10bit.SDR.DD5.1-NOGRP.mkv
 #EXTINF:-1 group-title="60.251.111.213",[60.251.111.213] Little.Women.2019.1080p.WEB-DL.DD5.1.H264-FGT.mkv
 http://60.251.111.213/%e5%a5%b9%e5%80%91/Little.Women.2019.1080p.WEB-DL.DD5.1.H264-FGT.mkv
+#EXTINF:-1 group-title="61.177.251.150:83",[61.177.251.150:83] 当幸福来敲门BD国英双语双字.mkv
+http://61.177.251.150:83/%E5%BD%93%E5%B9%B8%E7%A6%8F%E6%9D%A5%E6%95%B2%E9%97%A8BD%E5%9B%BD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E5%8F%8C%E5%AD%97.mkv
+#EXTINF:-1 group-title="61.70.109.60",[61.70.109.60] Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+http://61.70.109.60/Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+#EXTINF:-1 group-title="61.70.109.60",[61.70.109.60] 探索频道-台湾无比精采：医疗精英上集.mkv
+http://61.70.109.60/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8a%e9%9b%86.mkv
+#EXTINF:-1 group-title="61.70.109.60",[61.70.109.60] 探索频道-台湾无比精采：医疗精英下集.mkv
+http://61.70.109.60/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8b%e9%9b%86.mkv
+#EXTINF:-1 group-title="dejiko.net:10443",[dejiko.net:10443] [小倉唯] Future Strike MV.mkv
+https://dejiko.net:10443/%5b%e5%b0%8f%e5%80%89%e5%94%af%5d%20Future%20Strike%20MV.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+http://hk.htgy.fr.nf/Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] Midway.2019.1080p.BluRay.x264-AAA.mkv
+http://hk.htgy.fr.nf/Midway.2019.1080p.BluRay.x264-AAA.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] 蔡森20250526經典技術分析第419集美債ETF跌成狗!債匯雙逼股! 美國總統不要臉宇宙無敵! 中國的未來科技! 小波段的歡樂時光!.mkv
+http://hk.htgy.fr.nf/%E8%94%A1%E6%A3%AE20250526%E7%B6%93%E5%85%B8%E6%8A%80%E8%A1%93%E5%88%86%E6%9E%90%E7%AC%AC419%E9%9B%86%E7%BE%8E%E5%82%B5ETF%E8%B7%8C%E6%88%90%E7%8B%97!%E5%82%B5%E5%8C%AF%E9%9B%99%E9%80%BC%E8%82%A1!%20%E7%BE%8E%E5%9C%8B%E7%B8%BD%E7%B5%B1%E4%B8%8D%E8%A6%81%E8%87%89%E5%AE%87%E5%AE%99%E7%84%A1%E6%95%B5!%20%E4%B8%AD%E5%9C%8B%E7%9A%84%E6%9C%AA%E4%BE%86%E7%A7%91%E6%8A%80!%20%E5%B0%8F%E6%B3%A2%E6%AE%B5%E7%9A%84%E6%AD%A1%E6%A8%82%E6%99%82%E5%85%89!.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] DMDG-020.1080p.mkv
+http://hk.htgy.fr.nf/CGC/DMDG-020.1080p.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] DPMX-010.mkv
+http://hk.htgy.fr.nf/VA/DPMX-010.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+http://hk.htgy.fr.nf/Drama/Trick.The.Movie.2002.1080p.BluRay.x264-WiKi.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] The.Adjustment.Bureau.2011.1080p.BluRay.x264-CiNEFiLE.mkv
+http://hk.htgy.fr.nf/The.Adjustment.Bureau.2011.1080p.BluRay.x264-CiNEFiLE.mkv
+#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] DPMX-004.mkv
+http://hk.htgy.fr.nf/VA/DPMX-004.mkv
+#EXTINF:-1 group-title="ik.rewsx.top:8089",[ik.rewsx.top:8089] muzhongwuren2.mkv
+http://ik.rewsx.top:8089/video/muzhongwuren2.mkv
+#EXTINF:-1 group-title="istudio.direct.quickconnect.to",[istudio.direct.quickconnect.to] 探索频道-台湾无比精采：医疗精英下集.mkv
+http://istudio.direct.quickconnect.to/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8b%e9%9b%86.mkv
+#EXTINF:-1 group-title="istudio.direct.quickconnect.to",[istudio.direct.quickconnect.to] Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+http://istudio.direct.quickconnect.to/Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+#EXTINF:-1 group-title="istudio.direct.quickconnect.to",[istudio.direct.quickconnect.to] 探索频道-台湾无比精采：医疗精英上集.mkv
+http://istudio.direct.quickconnect.to/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8a%e9%9b%86.mkv
 #EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 敢死队4：最终章.2023.HD.1080P.中英双字.mkv
 http://movie.kametwu.com:81/%e6%95%a2%e6%ad%bb%e9%98%9f4%ef%bc%9a%e6%9c%80%e7%bb%88%e7%ab%a0.2023.HD.1080P.%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv
 #EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 机智的监狱生活.2017.S01.E02.mkv
@@ -759,3 +955,17 @@ http://ptfile.wget.es/%5BUHA-WINGS%5D%5BIshuzoku%20Rebyuazu%5D%5BBDRIP%201920x10
 http://ptfile.wget.es/Criminal.Minds.S17.2005.1080p.ATVP.WEB-DL.DDP5.1.Atmos.H264-HHWEB/Criminal.Minds.S17E07.2005.1080p.ATVP.WEB-DL.DDP5.1.Atmos.H264-HHWEB.mkv
 #EXTINF:-1 group-title="ptfile.wget.es",[ptfile.wget.es] [250530][nur]ママ喝っ ～姉ママの矜持～.mkv
 http://ptfile.wget.es/2025-05%20Anime%20Clollection/%5B250530%5D%5Bnur%5D%E3%83%9E%E3%83%9E%E5%96%9D%E3%81%A3%20%EF%BD%9E%E5%A7%89%E3%83%9E%E3%83%9E%E3%81%AE%E7%9F%9C%E6%8C%81%EF%BD%9E.mkv
+#EXTINF:-1 group-title="server.cjsah.net:1002",[server.cjsah.net:1002] LLDQ.mkv
+https://server.cjsah.net:1002/movie/LLDQ.mkv
+#EXTINF:-1 group-title="server.cjsah.net:1002",[server.cjsah.net:1002] The.Bad.Guys.2.2025.V2.2160p.iT.WEB-DL.H.265.DDP5.1.Atmos-QuickIO.mkv
+https://server.cjsah.net:1002/movie/The.Bad.Guys.2.2025.V2.2160p.iT.WEB-DL.H.265.DDP5.1.Atmos-QuickIO.mkv
+#EXTINF:-1 group-title="server.cjsah.net:1002",[server.cjsah.net:1002] LLDQ2.mkv
+https://server.cjsah.net:1002/movie/LLDQ2.mkv
+#EXTINF:-1 group-title="sm.jsvit.cn:83",[sm.jsvit.cn:83] 当幸福来敲门BD国英双语双字.mkv
+http://sm.jsvit.cn:83/%E5%BD%93%E5%B9%B8%E7%A6%8F%E6%9D%A5%E6%95%B2%E9%97%A8BD%E5%9B%BD%E8%8B%B1%E5%8F%8C%E8%AF%AD%E5%8F%8C%E5%AD%97.mkv
+#EXTINF:-1 group-title="www.istudio.direct.quickconnect.to",[www.istudio.direct.quickconnect.to] Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+http://www.istudio.direct.quickconnect.to/Tai.Chi.Hero.2012.BluRay.720p.x264.Ganool.mkv
+#EXTINF:-1 group-title="www.istudio.direct.quickconnect.to",[www.istudio.direct.quickconnect.to] 探索频道-台湾无比精采：医疗精英下集.mkv
+http://www.istudio.direct.quickconnect.to/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8b%e9%9b%86.mkv
+#EXTINF:-1 group-title="www.istudio.direct.quickconnect.to",[www.istudio.direct.quickconnect.to] 探索频道-台湾无比精采：医疗精英上集.mkv
+http://www.istudio.direct.quickconnect.to/%e6%8e%a2%e7%b4%a2%e9%a2%91%e9%81%93-%e5%8f%b0%e6%b9%be%e6%97%a0%e6%af%94%e7%b2%be%e9%87%87%ef%bc%9a%e5%8c%bb%e7%96%97%e7%b2%be%e8%8b%b1%e4%b8%8a%e9%9b%86.mkv
