@@ -147,7 +147,7 @@ def main():
     init_db()
 
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
-        urls = [line.strip() for line in f if line.strip() and not line.startswith("#")][:100]
+        urls = [line.strip() for line in f if line.strip() and not line.startswith("#")][:3000]
 
     print(f"开始任务，并发线程数: {MAX_THREADS} (限制处理前 100 个源)")
     print(f"正在深度爬取目录 (Max Depth: 3)...")
