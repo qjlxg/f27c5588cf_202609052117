@@ -17,7 +17,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 SOURCES_FILE = "sources.txt"
 CACHE_DB = "crawl_cache.db"
 VIDEO_EXTENSIONS = ('.mp4', '.mkv', '.m3u8', '.ts', '.mov', '.avi', '.flv', '.webm')
-MAX_THREADS = 10  # 爬取线程数
+MAX_THREADS = 20  # 爬取线程数
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -190,18 +190,47 @@ def main():
                 ext_groups[ext] = []
             ext_groups[ext].append(item)
 
+        # 设定拆分阈值：每个文件最多包含的频道数，或者最大估算字节数（例如 1MB = 1024 * 1024 字节）[cite: 1, 2]
+        MAX_CHANNELS_PER_FILE = 500  
+        MAX_SIZE_BYTES = 1 * 1024 * 1024  # 1MB 目标大小[cite: 1, 2]
+
         for ext, items in ext_groups.items():
             ext_name = ext.lstrip('.')
-            output_filename = f"{ext_name}_playlist.m3u"
-            
             items.sort(key=lambda x: x['group'])
 
-            with open(output_filename, "w", encoding="utf-8") as f:
-                f.write("#EXTM3U\n")
-                for item in items:
-                    f.write(f'#EXTINF:-1 group-title="{item["group"]}",{item["name"]}\n')
-                    f.write(f"{item['url']}\n")
-            print(f"已生成分类播放列表: {output_filename} (包含 {len(items)} 个资源)")
+            file_index = 1
+            current_channels = []
+            current_size = 0
+
+            def write_chunk(channels, idx):
+                output_filename = f"{ext_name}_playlist_part{idx}.m3u"
+                with open(output_filename, "w", encoding="utf-8") as f:
+                    f.write("#EXTM3U\n")
+                    for item in channels:
+                        inf_line = f'#EXTINF:-1 group-title="{item["group"]}",{item["name"]}\n'
+                        url_line = f"{item['url']}\n"
+                        f.write(inf_line)
+                        f.write(url_line)
+                print(f"已生成子播放列表: {output_filename} (包含 {len(channels)} 个资源)")
+
+            for item in items:
+                # 预估当前条目写入的字符/字节数 (#EXTINF行 + URL行)[cite: 1, 2]
+                entry_str = f'#EXTINF:-1 group-title="{item["group"]}",{item["name"]}\n{item["url"]}\n'
+                entry_size = len(entry_str.encode('utf-8'))
+
+                # 检查是否达到拆分条件（超频道数 或 超 1M 大小）[cite: 1, 2]
+                if len(current_channels) >= MAX_CHANNELS_PER_FILE or (current_size + entry_size > MAX_SIZE_BYTES and current_channels):
+                    write_chunk(current_channels, file_index)
+                    file_index += 1
+                    current_channels = []
+                    current_size = 0
+
+                current_channels.append(item)
+                current_size += entry_size
+
+            # 写入剩余的频道[cite: 1, 2]
+            if current_channels:
+                write_chunk(current_channels, file_index)
 
         print(f"\n任务圆满结束，总有效资源: {len(all_items)}")
     else:
