@@ -1,0 +1,99 @@
+#EXTM3U
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] index.m3u8
+http://117.78.51.109:8080/DRMTestStream/index.m3u8
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] index-whole.m3u8
+http://117.78.51.109:8080/DRMTestStream/index-whole.m3u8
+#EXTINF:-1 group-title="117.78.51.109:8080",[117.78.51.109:8080] index_tvos.m3u8
+http://117.78.51.109:8080/DRMTestStream/index_tvos.m3u8
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] index.m3u8
+https://117.78.51.109:8443/DRMTestStream/index.m3u8
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] index-whole.m3u8
+https://117.78.51.109:8443/DRMTestStream/index-whole.m3u8
+#EXTINF:-1 group-title="117.78.51.109:8443",[117.78.51.109:8443] index_tvos.m3u8
+https://117.78.51.109:8443/DRMTestStream/index_tvos.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] m3u8_file_read.m3u8
+http://120.48.32.73:8888/m3u8_file_read.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] ssrf.m3u8
+http://120.48.32.73:8888/ssrf.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] step2.m3u8
+http://120.48.32.73:8888/step2.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] ssrf_proof.m3u8
+http://120.48.32.73:8888/ssrf_proof.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] proxy2.m3u8
+http://120.48.32.73:8888/proxy2.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] median.m3u8
+http://120.48.32.73:8888/median.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] chain.m3u8
+http://120.48.32.73:8888/chain.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] proxy.m3u8
+http://120.48.32.73:8888/proxy.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] m3u8_concat.m3u8
+http://120.48.32.73:8888/m3u8_concat.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] proof.m3u8
+http://120.48.32.73:8888/proof.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] step1.m3u8
+http://120.48.32.73:8888/step1.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] echo.m3u8
+http://120.48.32.73:8888/echo.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] ssrf2.m3u8
+http://120.48.32.73:8888/ssrf2.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] twoseg.m3u8
+http://120.48.32.73:8888/twoseg.m3u8
+#EXTINF:-1 group-title="120.48.32.73:8888",[120.48.32.73:8888] exfil.m3u8
+http://120.48.32.73:8888/exfil.m3u8
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] stream.m3u8
+http://152.136.125.142:8888/baidu_shrimp/stream.m3u8
+#EXTINF:-1 group-title="152.136.125.142:8888",[152.136.125.142:8888] stream.m3u8
+http://152.136.125.142:8888/addtext/stream.m3u8
+#EXTINF:-1 group-title="180.169.241.70:9999",[180.169.241.70:9999] IPv4.m3u8
+http://180.169.241.70:9999/IPv4.m3u8
+#EXTINF:-1 group-title="1gw651297.oicp.vip:9999",[1gw651297.oicp.vip:9999] IPv4.m3u8
+http://1gw651297.oicp.vip:9999/IPv4.m3u8
+#EXTINF:-1 group-title="222.175.45.24:89",[222.175.45.24:89] test.m3u8
+http://222.175.45.24:89/test/test.m3u8
+#EXTINF:-1 group-title="58.213.32.62:10088",[58.213.32.62:10088] 08桂林山水.m3u8
+http://58.213.32.62:10088/m3u8Test/08%E6%A1%82%E6%9E%97%E5%B1%B1%E6%B0%B4.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] output.m3u8
+https://download.nodjoy.com/video1/output.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] index.m3u8
+https://download.nodjoy.com/video1/index.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] index.m3u8
+https://download.nodjoy.com/video2/index.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] index.m3u8
+http://download.nodjoy.com/video1/index.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] output.m3u8
+http://download.nodjoy.com/video1/output.m3u8
+#EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] index.m3u8
+http://download.nodjoy.com/video2/index.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] proxy.m3u8
+http://hacker1.top:8888/proxy.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] median.m3u8
+http://hacker1.top:8888/median.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] twoseg.m3u8
+http://hacker1.top:8888/twoseg.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] m3u8_file_read.m3u8
+http://hacker1.top:8888/m3u8_file_read.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] proof.m3u8
+http://hacker1.top:8888/proof.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] echo.m3u8
+http://hacker1.top:8888/echo.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] proxy2.m3u8
+http://hacker1.top:8888/proxy2.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] ssrf.m3u8
+http://hacker1.top:8888/ssrf.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] chain.m3u8
+http://hacker1.top:8888/chain.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] m3u8_concat.m3u8
+http://hacker1.top:8888/m3u8_concat.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] ssrf2.m3u8
+http://hacker1.top:8888/ssrf2.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] step1.m3u8
+http://hacker1.top:8888/step1.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] step2.m3u8
+http://hacker1.top:8888/step2.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] exfil.m3u8
+http://hacker1.top:8888/exfil.m3u8
+#EXTINF:-1 group-title="hacker1.top:8888",[hacker1.top:8888] ssrf_proof.m3u8
+http://hacker1.top:8888/ssrf_proof.m3u8
+#EXTINF:-1 group-title="sipgmds.wicp.net:9999",[sipgmds.wicp.net:9999] IPv4.m3u8
+http://sipgmds.wicp.net:9999/IPv4.m3u8
