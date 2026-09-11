@@ -349,16 +349,16 @@ http://58.213.32.62:10088/m3u8Test/08%E6%A1%82%E6%9E%97%E5%B1%B1%E6%B0%B4120.ts
 http://58.213.32.62:10088/m3u8Test/08%E6%A1%82%E6%9E%97%E5%B1%B1%E6%B0%B4142.ts
 #EXTINF:-1 group-title="58.213.32.62:82",[58.213.32.62:82] 偷来的女儿001.ts
 http://58.213.32.62:82/%E5%81%B7%E6%9D%A5%E7%9A%84%E5%A5%B3%E5%84%BF001.ts
-#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] index.ts
-https://api.mgongf.cn:8090/word-game-node/src/index.ts
-#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] env.d.ts
-https://api.mgongf.cn:8090/word-game-node/dist/env.d.ts
+#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] tests.d.ts
+https://api.mgongf.cn:8090/word-game-node/tests/tests.d.ts
 #EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] env.ts
 https://api.mgongf.cn:8090/word-game-node/src/env.ts
 #EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] index.d.ts
 https://api.mgongf.cn:8090/word-game-node/dist/index.d.ts
-#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] tests.d.ts
-https://api.mgongf.cn:8090/word-game-node/tests/tests.d.ts
+#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] index.ts
+https://api.mgongf.cn:8090/word-game-node/src/index.ts
+#EXTINF:-1 group-title="api.mgongf.cn:8090",[api.mgongf.cn:8090] env.d.ts
+https://api.mgongf.cn:8090/word-game-node/dist/env.d.ts
 #EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] output18.ts
 https://download.nodjoy.com/video1/output18.ts
 #EXTINF:-1 group-title="download.nodjoy.com",[download.nodjoy.com] output11.ts

@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="6kaifa.com:8102",[6kaifa.com:8102] 87.mp4
-http://6kaifa.com:8102/87.mp4
-#EXTINF:-1 group-title="6kaifa.com:8102",[6kaifa.com:8102] 496.mp4
-http://6kaifa.com:8102/496.mp4
-#EXTINF:-1 group-title="6kaifa.com:8102",[6kaifa.com:8102] 293.mp4
-http://6kaifa.com:8102/293.mp4
 #EXTINF:-1 group-title="6kaifa.com:8102",[6kaifa.com:8102] 406.mp4
 http://6kaifa.com:8102/406.mp4
 #EXTINF:-1 group-title="6kaifa.com:8102",[6kaifa.com:8102] 269.mp4
@@ -999,3 +993,9 @@ https://8.130.89.229/Ukey%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.mp4
 http://8.134.164.140/%cf%80%20Touch%20xuanchuanpian.mp4
 #EXTINF:-1 group-title="8.134.164.140",[8.134.164.140] ΠTouch联动灯控机器人、DJAIde.mp4
 http://8.134.164.140/%ce%a0Touch%e8%81%94%e5%8a%a8%e7%81%af%e6%8e%a7%e6%9c%ba%e5%99%a8%e4%ba%ba%e3%80%81DJAIde.mp4
+#EXTINF:-1 group-title="8.134.164.140",[8.134.164.140] Party Genie xitongshezhi.mp4
+http://8.134.164.140/Party%20Genie%20xitongshezhi.mp4
+#EXTINF:-1 group-title="8.134.164.140",[8.134.164.140] π Touch.mp4
+http://8.134.164.140/%cf%80%20Touch.mp4
+#EXTINF:-1 group-title="8.134.164.140",[8.134.164.140] DJ-rekordbox jiaocheng.mp4
+http://8.134.164.140/DJ-rekordbox%20jiaocheng.mp4

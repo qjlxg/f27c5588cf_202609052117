@@ -1,12 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 878.mp4
-http://www.6kaifa.com:8102/878.mp4
-#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 884.mp4
-http://www.6kaifa.com:8102/884.mp4
-#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 368.mp4
-http://www.6kaifa.com:8102/368.mp4
-#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 728.mp4
-http://www.6kaifa.com:8102/728.mp4
 #EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 471.mp4
 http://www.6kaifa.com:8102/471.mp4
 #EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 456-2.mp4
@@ -999,3 +991,11 @@ http://xingpuzhi.com:10000/pk/camera.mp4
 http://xingpuzhi.com:10000/v.f30.mp4
 #EXTINF:-1 group-title="xingpuzhi.com:10000",[xingpuzhi.com:10000] video2.mp4
 http://xingpuzhi.com:10000/pdroom/video2.mp4
+#EXTINF:-1 group-title="xingpuzhi.com:10000",[xingpuzhi.com:10000] playback.mp4
+http://xingpuzhi.com:10000/ibos/playback.mp4
+#EXTINF:-1 group-title="xingpuzhi.com:10000",[xingpuzhi.com:10000] radar.mp4
+http://xingpuzhi.com:10000/pk/radar.mp4
+#EXTINF:-1 group-title="xkqafmail.stu.zysj-bj.com:8090",[xkqafmail.stu.zysj-bj.com:8090] 1.mp4
+http://xkqafmail.stu.zysj-bj.com:8090/1.mp4
+#EXTINF:-1 group-title="xnhazogckgpanel.zysj-bj.com:8090",[xnhazogckgpanel.zysj-bj.com:8090] 1.mp4
+http://xnhazogckgpanel.zysj-bj.com:8090/1.mp4

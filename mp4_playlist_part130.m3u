@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] MIAD-711-C.mp4
-http://hk.htgy.fr.nf/VA/MIAD-711-C.mp4
-#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] WANZ-105-P.mp4
-http://hk.htgy.fr.nf/VA/WANZ-105-P.mp4
-#EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] CJOD-241-C.mp4
-http://hk.htgy.fr.nf/VA/CJOD-241-C.mp4
 #EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] SNIS-419-C.mp4
 http://hk.htgy.fr.nf/VA/SNIS-419-C.mp4
 #EXTINF:-1 group-title="hk.htgy.fr.nf",[hk.htgy.fr.nf] XVAR-538-C.mp4
@@ -999,3 +993,9 @@ http://movie.kametwu.com:81/1110/%e7%a2%9f%e4%b8%ad%e8%b0%8d8%ef%bc%9a%e6%9c%80%
 http://movie.kametwu.com:81/%e8%af%b7%e5%9b%9e%e7%ad%941988.2015.1080P.%e5%85%a820%e9%9b%86/%e8%af%b7%e5%9b%9e%e7%ad%941988.2015.1080P.07.mp4
 #EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 机智的医生生活.2021.S02.E09.mp4
 http://movie.kametwu.com:81/%e6%9c%ba%e6%99%ba%e7%9a%84%e5%8c%bb%e7%94%9f%e7%94%9f%e6%b4%bb.S02.%e9%9f%a9%e5%9b%bd.2021.%e5%96%9c%e5%89%a7.12%e9%9b%86%e5%85%a8/%e6%9c%ba%e6%99%ba%e7%9a%84%e5%8c%bb%e7%94%9f%e7%94%9f%e6%b4%bb.2021.S02.E09.mp4
+#EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 哪吒之魔童闹海-2025_HD国语中字.mp4
+http://movie.kametwu.com:81/%e5%93%aa%e5%90%92%e4%b9%8b%e9%ad%94%e7%ab%a5%e9%97%b9%e6%b5%b7-2025_HD%e5%9b%bd%e8%af%ad%e4%b8%ad%e5%ad%97.mp4
+#EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 鬼子来了.Devils.On.The.Doorstep.2000.Bluray.1080p.mp4
+http://movie.kametwu.com:81/%e6%9c%95%e5%b7%b2%e9%98%85%e7%94%b5%e5%bd%b1/%e9%ac%bc%e5%ad%90%e6%9d%a5%e4%ba%86.Devils.On.The.Doorstep.2000.Bluray.1080p.mp4
+#EXTINF:-1 group-title="movie.kametwu.com:81",[movie.kametwu.com:81] 坠落的审判-2023_BD中字.mp4
+http://movie.kametwu.com:81/20240206/%e5%9d%a0%e8%90%bd%e7%9a%84%e5%ae%a1%e5%88%a4-2023_BD%e4%b8%ad%e5%ad%97.mp4

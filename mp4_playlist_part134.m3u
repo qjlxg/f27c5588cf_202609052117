@@ -1,12 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] Layaverse.mp4
-http://video.layabox.com:8089/layaverse/Layaverse.mp4
-#EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] texiao.mp4
-http://video.layabox.com:8089/20230207/texiao.mp4
-#EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] product-1-2.mp4
-http://video.layabox.com:8089/product-1-2.mp4
-#EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] yanjiang.mp4
-http://video.layabox.com:8089/20221128/yanjiang.mp4
 #EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] yuankongjianxuanchuan.mp4
 http://video.layabox.com:8089/20221112/yuankongjianxuanchuan.mp4
 #EXTINF:-1 group-title="video.layabox.com:8089",[video.layabox.com:8089] huimengtainxia.mp4
@@ -999,3 +991,11 @@ http://www.6kaifa.com:8102/730.mp4
 http://www.6kaifa.com:8102/487.mp4
 #EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 668.mp4
 http://www.6kaifa.com:8102/668.mp4
+#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 745.mp4
+http://www.6kaifa.com:8102/745.mp4
+#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 349.mp4
+http://www.6kaifa.com:8102/349.mp4
+#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 473.mp4
+http://www.6kaifa.com:8102/473.mp4
+#EXTINF:-1 group-title="www.6kaifa.com:8102",[www.6kaifa.com:8102] 295.mp4
+http://www.6kaifa.com:8102/295.mp4

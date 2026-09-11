@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="39.108.49.142:8077",[39.108.49.142:8077] LSM_demo1.mp4
-http://39.108.49.142:8077/3dGS_Papers/LSM_demo1.mp4
-#EXTINF:-1 group-title="39.108.49.142:8077",[39.108.49.142:8077] presentation.mp4
-http://39.108.49.142:8077/3dGS_Papers/presentation.mp4
-#EXTINF:-1 group-title="39.108.49.142:8077",[39.108.49.142:8077] 3_1.mp4
-http://39.108.49.142:8077/3dGS_Papers/3_1.mp4
 #EXTINF:-1 group-title="39.108.49.142:8077",[39.108.49.142:8077] full_video.mp4
 http://39.108.49.142:8077/3dGS_Papers/full_video.mp4
 #EXTINF:-1 group-title="39.108.49.142:8077",[39.108.49.142:8077] gui_demo.mp4
@@ -999,3 +993,9 @@ http://42.81.113.178:1314/new_hd5/stream-695648672420201277.mp4
 http://42.81.113.178:1314/ori_sd5/stream-119164106871407418.mp4
 #EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-119188811124310876.mp4
 http://42.81.113.178:1314/ori_sd5/stream-119188811124310876.mp4
+#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695651912711668541.mp4
+http://42.81.113.178:1314/ori_hd5/stream-695651912711668541.mp4
+#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695646248044593981.mp4
+http://42.81.113.178:1314/new_hd5/stream-695646248044593981.mp4
+#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695648672420201277.mp4
+http://42.81.113.178:1314/ori_sd5/stream-695648672420201277.mp4

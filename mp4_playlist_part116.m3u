@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695651912711668541.mp4
-http://42.81.113.178:1314/ori_hd5/stream-695651912711668541.mp4
-#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695646248044593981.mp4
-http://42.81.113.178:1314/new_hd5/stream-695646248044593981.mp4
-#EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695648672420201277.mp4
-http://42.81.113.178:1314/ori_sd5/stream-695648672420201277.mp4
 #EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-695650887015072563.mp4
 http://42.81.113.178:1314/ori_hd5/stream-695650887015072563.mp4
 #EXTINF:-1 group-title="42.81.113.178:1314",[42.81.113.178:1314] stream-119185266441978682.mp4
@@ -999,3 +993,9 @@ http://47.108.130.154:8080/video-course-demo/silent_02.mp4
 http://47.108.130.154:8080/video-course-demo/part_03.mp4
 #EXTINF:-1 group-title="47.108.130.154:8080",[47.108.130.154:8080] part_04.mp4
 http://47.108.130.154:8080/video-course-demo/part_04.mp4
+#EXTINF:-1 group-title="47.108.130.154:8080",[47.108.130.154:8080] silent_01.mp4
+http://47.108.130.154:8080/video-course-demo/silent_01.mp4
+#EXTINF:-1 group-title="47.108.130.154:8080",[47.108.130.154:8080] rag_course_v1.mp4
+http://47.108.130.154:8080/video-course-demo/rag_course_v1.mp4
+#EXTINF:-1 group-title="47.108.190.232:8788",[47.108.190.232:8788] xiuxiuman_20260526_200858.mp4
+http://47.108.190.232:8788/xiuxiuman_20260526_200858.mp4
